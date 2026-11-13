@@ -1,0 +1,20 @@
+===== RECOVERED STATE =====
+Friday 13 November 2026 09:18:09 AM IST
+NAME         IMAGE                         COMMAND                  SERVICE      CREATED          STATUS                        PORTS
+db           postgres:16                   "docker-entrypoint.s…"   db           16 minutes ago   Up 50 seconds (healthy)       0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
+orders-api   health-check-lab-orders-api   "docker-entrypoint.s…"   orders-api   3 minutes ago    Up About a minute (healthy)   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+===== READINESS =====
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     5  100     5    0     0   1065      0 --:--:-- --:--:-- --:--:--  1250
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 5
+ETag: W/"5-/FVNArjFa9Xm5QWjlKISD/c6L7A"
+Date: Fri, 13 Nov 2026 03:48:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+READY===== INSPECT =====
+healthy
