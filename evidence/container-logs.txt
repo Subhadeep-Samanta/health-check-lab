@@ -1,0 +1,193 @@
+orders-api  |         _writableState: WritableState {
+orders-api  |           objectMode: false,
+orders-api  |           highWaterMark: 16384,
+orders-api  |           finalCalled: false,
+orders-api  |           needDrain: false,
+orders-api  |           ending: false,
+orders-api  |           ended: false,
+orders-api  |           finished: false,
+orders-api  |           destroyed: true,
+orders-api  |           decodeStrings: false,
+orders-api  |           defaultEncoding: 'utf8',
+orders-api  |           length: 0,
+orders-api  |           writing: false,
+orders-api  |           corked: 0,
+orders-api  |           sync: false,
+orders-api  |           bufferProcessing: false,
+orders-api  |           onwrite: [Function: bound onwrite],
+orders-api  |           writecb: null,
+orders-api  |           writelen: 0,
+orders-api  |           afterWriteTickInfo: null,
+orders-api  |           buffered: [],
+orders-api  |           bufferedIndex: 0,
+orders-api  |           allBuffers: true,
+orders-api  |           allNoop: true,
+orders-api  |           pendingcb: 0,
+orders-api  |           constructed: true,
+orders-api  |           prefinished: false,
+orders-api  |           errorEmitted: false,
+orders-api  |           emitClose: false,
+orders-api  |           autoDestroy: true,
+orders-api  |           errored: null,
+orders-api  |           closed: true,
+orders-api  |           closeEmitted: false,
+orders-api  |           [Symbol(kOnFinished)]: []
+orders-api  |         },
+orders-api  |         allowHalfOpen: false,
+orders-api  |         _sockname: null,
+orders-api  |         _pendingData: null,
+orders-api  |         _pendingEncoding: '',
+orders-api  |         server: null,
+orders-api  |         _server: null,
+orders-api  |         [Symbol(async_id_symbol)]: 461,
+orders-api  |         [Symbol(kHandle)]: null,
+orders-api  |         [Symbol(lastWriteQueueSize)]: 0,
+orders-api  |         [Symbol(timeout)]: null,
+orders-api  |         [Symbol(kBuffer)]: null,
+orders-api  |         [Symbol(kBufferCb)]: null,
+orders-api  |         [Symbol(kBufferGen)]: null,
+orders-api  |         [Symbol(kCapture)]: false,
+orders-api  |         [Symbol(kSetNoDelay)]: true,
+orders-api  |         [Symbol(kSetKeepAlive)]: false,
+orders-api  |         [Symbol(kSetKeepAliveInitialDelay)]: 0,
+orders-api  |         [Symbol(kBytesRead)]: 792,
+orders-api  |         [Symbol(kBytesWritten)]: 237
+orders-api  |       },
+orders-api  |       _keepAlive: false,
+orders-api  |       _keepAliveInitialDelayMillis: 0,
+orders-api  |       parsedStatements: {},
+orders-api  |       submittedNamedStatements: {},
+orders-api  |       ssl: false,
+orders-api  |       sslNegotiation: 'postgres',
+orders-api  |       _ending: false,
+orders-api  |       _emitMessage: false,
+orders-api  |       _connecting: true,
+orders-api  |       [Symbol(kCapture)]: false
+orders-api  |     },
+orders-api  |     _queryQueue: [],
+orders-api  |     _sentQueryQueue: [],
+orders-api  |     pipeline: false,
+orders-api  |     binary: false,
+orders-api  |     processID: 135,
+orders-api  |     secretKey: 741999519,
+orders-api  |     ssl: false,
+orders-api  |     sslNegotiation: 'postgres',
+orders-api  |     _connectionTimeoutMillis: 0,
+orders-api  |     _connectionCallback: null,
+orders-api  |     saslSession: null,
+orders-api  |     release: [Function (anonymous)],
+orders-api  |     readyForQuery: true,
+orders-api  |     hasExecuted: true,
+orders-api  |     _poolUseCount: 1,
+orders-api  |     [Symbol(kCapture)]: false
+orders-api  |   }
+orders-api  | }
+orders-api  | 
+orders-api  | Node.js v18.20.8
+orders-api  | 
+orders-api  | > orders-api@1.0.0 start
+orders-api  | > node src/server.js
+orders-api  | 
+orders-api  | Orders API running on port 3000
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+orders-api  | Readiness check failed: getaddrinfo ENOTFOUND db
+db          | The files belonging to this database system will be owned by user "postgres".
+db          | This user must also own the server process.
+db          | 
+db          | The database cluster will be initialized with locale "en_US.utf8".
+db          | The default database encoding has accordingly been set to "UTF8".
+db          | The default text search configuration will be set to "english".
+db          | 
+db          | Data page checksums are disabled.
+db          | 
+db          | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db          | creating subdirectories ... ok
+db          | selecting dynamic shared memory implementation ... posix
+db          | selecting default max_connections ... 100
+db          | selecting default shared_buffers ... 128MB
+db          | selecting default time zone ... Etc/UTC
+db          | creating configuration files ... ok
+db          | running bootstrap script ... ok
+db          | performing post-bootstrap initialization ... ok
+db          | syncing data to disk ... ok
+db          | 
+db          | 
+db          | initdb: warning: enabling "trust" authentication for local connections
+db          | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+db          | Success. You can now start the database server using:
+db          | 
+db          |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db          | 
+db          | waiting for server to start....2026-11-13 03:31:12.510 UTC [48] LOG:  starting PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db          | 2026-11-13 03:31:12.512 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db          | 2026-11-13 03:31:12.516 UTC [51] LOG:  database system was shut down at 2026-11-13 03:31:12 UTC
+db          | 2026-11-13 03:31:12.521 UTC [48] LOG:  database system is ready to accept connections
+db          |  done
+db          | server started
+db          | CREATE DATABASE
+db          | 
+db          | 
+db          | /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+db          | CREATE TABLE
+db          | INSERT 0 3
+db          | 
+db          | 
+db          | waiting for server to shut down....2026-11-13 03:31:12.750 UTC [48] LOG:  received fast shutdown request
+db          | 2026-11-13 03:31:12.751 UTC [48] LOG:  aborting any active transactions
+db          | 2026-11-13 03:31:12.753 UTC [48] LOG:  background worker "logical replication launcher" (PID 54) exited with exit code 1
+db          | 2026-11-13 03:31:12.753 UTC [49] LOG:  shutting down
+db          | 2026-11-13 03:31:12.754 UTC [49] LOG:  checkpoint starting: shutdown immediate
+db          | 2026-11-13 03:31:12.795 UTC [49] LOG:  checkpoint complete: wrote 945 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.019 s, total=0.042 s; sync files=304, longest=0.001 s, average=0.001 s; distance=4362 kB, estimate=4362 kB; lsn=0/19471B0, redo lsn=0/19471B0
+db          | 2026-11-13 03:31:12.802 UTC [48] LOG:  database system is shut down
+db          |  done
+db          | server stopped
+db          | 
+db          | PostgreSQL init process complete; ready for start up.
+db          | 
+db          | 2026-11-13 03:31:12.882 UTC [1] LOG:  starting PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db          | 2026-11-13 03:31:12.883 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db          | 2026-11-13 03:31:12.883 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db          | 2026-11-13 03:31:12.885 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db          | 2026-11-13 03:31:12.890 UTC [66] LOG:  database system was shut down at 2026-11-13 03:31:12 UTC
+db          | 2026-11-13 03:31:12.897 UTC [1] LOG:  database system is ready to accept connections
+db          | 2026-11-13 03:34:02.403 UTC [1] LOG:  received fast shutdown request
+db          | 2026-11-13 03:34:02.404 UTC [1] LOG:  aborting any active transactions
+db          | 2026-11-13 03:34:02.404 UTC [222] FATAL:  terminating connection due to administrator command
+db          | 2026-11-13 03:34:02.407 UTC [1] LOG:  background worker "logical replication launcher" (PID 69) exited with exit code 1
+db          | 2026-11-13 03:34:02.407 UTC [64] LOG:  shutting down
+db          | 2026-11-13 03:34:02.408 UTC [64] LOG:  checkpoint starting: shutdown immediate
+db          | 2026-11-13 03:34:02.415 UTC [64] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.009 s; sync files=12, longest=0.001 s, average=0.001 s; distance=252 kB, estimate=252 kB; lsn=0/1986410, redo lsn=0/1986410
+db          | 2026-11-13 03:34:02.421 UTC [1] LOG:  database system is shut down
+db          | 
+db          | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db          | 
+db          | 2026-11-13 03:44:12.545 UTC [1] LOG:  starting PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db          | 2026-11-13 03:44:12.545 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db          | 2026-11-13 03:44:12.545 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db          | 2026-11-13 03:44:12.547 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db          | 2026-11-13 03:44:12.553 UTC [29] LOG:  database system was shut down at 2026-11-13 03:34:02 UTC
+db          | 2026-11-13 03:44:12.560 UTC [1] LOG:  database system is ready to accept connections
+db          | 2026-11-13 03:46:11.475 UTC [1] LOG:  received fast shutdown request
+db          | 2026-11-13 03:46:11.476 UTC [1] LOG:  aborting any active transactions
+db          | 2026-11-13 03:46:11.476 UTC [135] FATAL:  terminating connection due to administrator command
+db          | 2026-11-13 03:46:11.479 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+db          | 2026-11-13 03:46:11.479 UTC [27] LOG:  shutting down
+db          | 2026-11-13 03:46:11.480 UTC [27] LOG:  checkpoint starting: shutdown immediate
+db          | 2026-11-13 03:46:11.485 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.007 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/19864C0, redo lsn=0/19864C0
+db          | 2026-11-13 03:46:11.491 UTC [1] LOG:  database system is shut down
+db          | 
+db          | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db          | 
+db          | 2026-11-13 03:47:18.982 UTC [1] LOG:  starting PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db          | 2026-11-13 03:47:18.982 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db          | 2026-11-13 03:47:18.982 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db          | 2026-11-13 03:47:18.984 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db          | 2026-11-13 03:47:18.987 UTC [29] LOG:  database system was shut down at 2026-11-13 03:46:11 UTC
+db          | 2026-11-13 03:47:18.993 UTC [1] LOG:  database system is ready to accept connections

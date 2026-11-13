@@ -1,0 +1,34 @@
+===== DATABASE FAILURE =====
+Friday 13 November 2026 09:16:57 AM IST
+NAME         IMAGE                         COMMAND                  SERVICE      CREATED         STATUS                      PORTS
+orders-api   health-check-lab-orders-api   "docker-entrypoint.s…"   orders-api   2 minutes ago   Up 45 seconds (unhealthy)   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+===== LIVENESS =====
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     2  100     2    0     0    397      0 --:--:-- --:--:-- --:--:--   500
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 2
+ETag: W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+Date: Fri, 13 Nov 2026 03:46:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+OK===== READINESS =====
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     9  100     9    0     0    505      0 --:--:-- --:--:-- --:--:--   529
+HTTP/1.1 503 Service Unavailable
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 9
+ETag: W/"9-DbI+g0rGLzQp4NNkrRB88I9+mFE"
+Date: Fri, 13 Nov 2026 03:46:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+NOT READY===== INSPECT =====
+unhealthy
+===== HEALTH CHECK HISTORY =====
+[{"Start":"2026-11-13T09:16:22.358711922+05:30","End":"2026-11-13T09:16:22.481391092+05:30","ExitCode":1,"Output":""},{"Start":"2026-11-13T09:16:27.48264856+05:30","End":"2026-11-13T09:16:27.664426667+05:30","ExitCode":1,"Output":""},{"Start":"2026-11-13T09:16:31.964657056+05:30","End":"2026-11-13T09:16:32.091308889+05:30","ExitCode":1,"Output":""},{"Start":"2026-11-13T09:16:42.092819008+05:30","End":"2026-11-13T09:16:42.217116513+05:30","ExitCode":1,"Output":""},{"Start":"2026-11-13T09:16:52.218621201+05:30","End":"2026-11-13T09:16:52.341343457+05:30","ExitCode":1,"Output":""}]

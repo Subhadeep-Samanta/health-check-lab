@@ -1,52 +1,63 @@
-# Health Check Verification
+# Health Check Verification Report
+
+## Objective
+
+Verify that the Orders API correctly detects application
+health and database availability using Docker health checks.
 
 ## 1. Healthy State
 
-Expected observations:
+The application and PostgreSQL database were started
+using Docker Compose.
 
-- orders-api reports healthy.
-- db reports healthy.
-- GET /health returns HTTP 200.
-- GET /ready returns HTTP 200.
+Observed:
+- orders-api reported healthy.
+- db reported healthy.
+- GET /health returned HTTP 200.
+- GET /ready returned HTTP 200.
 
-Evidence: evidence/healthy.txt
+Evidence: `evidence/healthy.txt`
 
 ## 2. Database Failure
 
-Test:
+The PostgreSQL container was stopped using:
 
-docker compose stop db
+`docker compose stop db`
 
-Expected observations:
+Observed:
+- The API process remained running.
+- GET /health continued returning HTTP 200.
+- GET /ready returned HTTP 503.
+- Docker marked orders-api unhealthy.
 
-- Application process remains alive.
-- GET /health returns HTTP 200.
-- GET /ready returns HTTP 503.
-- orders-api becomes unhealthy.
-
-Evidence: evidence/unhealthy.txt
+Evidence: `evidence/unhealthy.txt`
 
 ## 3. Database Recovery
 
-Test:
+PostgreSQL was restarted using:
 
-docker compose start db
+`docker compose start db`
 
-Expected observations:
+Observed:
+- PostgreSQL became available again.
+- GET /ready returned HTTP 200.
+- Docker marked orders-api healthy again.
 
-- PostgreSQL becomes available.
-- GET /ready returns HTTP 200.
-- orders-api returns to healthy.
-
-Evidence: evidence/recovered.txt
+Evidence: `evidence/recovered.txt`
 
 ## 4. Container Logs
 
-Evidence: evidence/container-logs.txt
+Evidence: `evidence/container-logs.txt`
 
-## 5. Recovery Limitation
+## 5. Recovery Behaviour
 
-Docker Compose restart: unless-stopped does not restart a
-container solely because its health status becomes unhealthy.
-The recovery demonstrated here is restoration of readiness
-after the database dependency is restored.
+The Docker Compose restart policy is set to
+`unless-stopped`.
+
+This policy restarts containers when their main process exits.
+It does not automatically restart containers solely because
+they become unhealthy.
+
+The recovery test demonstrates that the application
+automatically returns to a healthy state when its database
+dependency is restored.
