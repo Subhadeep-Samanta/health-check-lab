@@ -1,3 +1,4 @@
+
 const { Pool } = require('pg');
 
 const pool = new Pool({
@@ -8,6 +9,15 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
+// Execute database queries
+const query = (text, params) => pool.query(text, params);
+
+// Check whether the database is reachable
+const ping = async () => {
+  await pool.query('SELECT 1');
+};
+
 module.exports = {
-  query: (text, params) => pool.query(text, params),
+  query,
+  ping,
 };
